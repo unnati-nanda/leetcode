@@ -9,9 +9,9 @@ public:
         while (low <= high){
           int mid = low + (high - low) / 2;
 
-            if (mid  == x/mid) {
+            if ((long long)mid*mid  == x) {
                 return mid;
-            } else if (mid < (x/mid)) {
+            } else if ((long long) mid*mid < x) {
                 ans = mid;
                 low = mid + 1;
             } else {
