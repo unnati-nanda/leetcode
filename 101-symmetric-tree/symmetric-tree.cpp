@@ -14,7 +14,7 @@ class Solution {
 public:
     bool isSymmetric(TreeNode* root) {
         if (!root)
-            return false;
+            return true;
         vector<vector<int>> ans;
         queue<TreeNode*> q;
         q.push(root);
